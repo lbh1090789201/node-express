@@ -1,0 +1,67 @@
+h1 {
+  font-size: 20px;
+}
+.city-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.8);
+  .city-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background: #fff;
+    overflow: hidden;
+  }
+  #province_data,#city_data,#county_data {
+    float: left;
+    height: 6rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #province_list,#city_list,#county_list {
+    margin: 0;
+    padding: 0.1rem 0.2rem 1rem 0.2rem;
+    list-style: none;
+    text-align: center;
+    font-size: 0.27rem;
+     li {
+       height: 0.7rem;
+       line-height: 0.7rem;
+     }
+  }
+  li.on {
+    color: #fff;
+    background: #3d9f9e;
+  }
+  p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 0.7rem;
+    background: #3d9f9e;
+  }
+  button {
+    position: absolute;
+    border: none;
+    height: 0.7rem;
+    width: 2rem;
+    color: #fff;
+    background: #3d9f9e;
+    font-size: 0.27rem;
+  }
+  button:nth-child(2) {
+    right: 0;
+  }
+  button:nth-child(1):focus {
+    outline: none;
+  }
+  button:nth-child(2):focus {
+    outline: none;
+  }
+}

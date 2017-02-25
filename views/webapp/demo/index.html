@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../../layouts/layout_header_first.html %>
+  </head>
+  <body>
+    <h1 style="font-size: 0.3rem">I am the template</h1>
+    <h1>I am the template</h1>
+    <h1>I am the template</h1>
+    <h1>I am the template</h1>
+    <h1>I am the template</h1>
+    <input type="text" id="grab_address" style="height: 50px"/>
+    <footer>
+      <% include ../../layouts/layout_footer_first.html %>
+    </footer>
+  </body>
+  <script>
+      // 调用城市选择插件
+      provinceCityCounty({
+          boolean: true, // 是否显示县区
+          target_id: "grab_address", //事件目标
+          element_id: "grab_address", // 放置文本节点
+        　callback: function() {
+          　// 该回调函数用于target_id目标事件的回调
+         　 document.getElementById("grab_address").blur();
+        　}
+      });
+  </script>
+</html>
